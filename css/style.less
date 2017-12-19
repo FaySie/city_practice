@@ -107,8 +107,21 @@ nav {
     }
 }
 
+#menu-container {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transform: translateX(100vw);
+    transition: 1s;
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
 .menu-item {
-    height: 33vh;
+    height: 33.333vh;
     padding: 0;
     position: relative;
 
